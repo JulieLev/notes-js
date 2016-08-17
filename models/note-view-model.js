@@ -14,4 +14,4 @@ NoteView.prototype = {
 
 };
 
-module.exports = NoteView;
+// module.exports = NoteView;

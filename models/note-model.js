@@ -9,4 +9,4 @@ Note.prototype = {
     },
 };
 
-module.exports = Note;
+// module.exports = Note;

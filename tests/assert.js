@@ -17,5 +17,5 @@ Assert.prototype = {
       return console.log("Nice!");
     }
 };
-
-module.exports = Assert;
+// 
+// module.exports = Assert;
