@@ -6,9 +6,9 @@
 //   return console.log("Nice!");
 // }
 
-
-var Assert = require("./assert");
-var Note   = require("../models/note-model");
+// 
+// var Assert = require("./assert");
+// var Note   = require("../models/note-model");
 var assert = new Assert();
 
 

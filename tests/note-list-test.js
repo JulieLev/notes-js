@@ -1,6 +1,6 @@
-var Assert = require("./assert");
-var Note   = require("../models/note-model");
-var NoteList = require("../models/note-list-model");
+// var Assert = require("./assert");
+// var Note   = require("../models/note-model");
+// var NoteList = require("../models/note-list-model");
 var assert = new Assert();
 
 function storesArrayOfNoteModels(){

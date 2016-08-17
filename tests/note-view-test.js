@@ -1,6 +1,6 @@
-var Assert = require("./assert");
-var NoteList = require("../models/note-list-model");
-var NoteView = require("../models/note-view-model");
+// var Assert = require("./assert");
+// var NoteList = require("../models/note-list-model");
+// var NoteView = require("../models/note-view-model");
 var assert = new Assert();
 var noteList = new NoteList();
 var noteView = new NoteView(noteList);
