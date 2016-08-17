@@ -7,11 +7,9 @@ var noteView = new NoteView(noteList);
 
 var htmlString = "<ul><li><div>example</div></li><li><div>example</div></li><li><div>example</div></li></ul>";
 
-
 for (i=0; i<3; i++){
   noteList.addNoteToNotes("example");
 }
-
 
 function takesNoteListUponInstantiation() {
   assert.isTrue(noteView !== null);
