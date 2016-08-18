@@ -32,7 +32,7 @@ function testOutputTwenty() {
   list.addNote("This is a string which must have more than 20");
   var noteListView = new NoteListView(list.displayList());
   var web20String = noteListView.outputTwenty();
-  if (web20String === "<ul><li>This is a string whi</li></ul>") {
+  if (web20String === "<ul><li><a href=\"localhost8080:\#0\">This is a string whi</a></li></ul>") {
     console.log("Pass: Restricts to 20 characters");
   }
   else {
@@ -47,7 +47,7 @@ function testOutputTwentyExact() {
   list.addNote("12345678901234567890");
   var noteListView = new NoteListView(list.displayList());
   var web20String = noteListView.outputTwenty();
-  if (web20String === "<ul><li>12345678901234567890</li></ul>") {
+  if (web20String === "<ul><li><a href=\"localhost8080:\#0\">12345678901234567890</a></li></ul>") {
     console.log("Pass: Restricts to exactly 20 characters");
   }
   else {
@@ -61,7 +61,7 @@ function testNoteLinkIncludesHref() {
   list.addNote("I am Julie - ha ha");
   var noteListView = new NoteListView(list.displayList());
   var webIdString = noteListView.outputTwenty();
-  if (webIdString === "<ul><li><a href=\"localhost8080:\#0\">I am Julie - ha ha</a</li></ul>") {
+  if (webIdString === "<ul><li><a href=\"localhost8080:\#0\">I am Julie - ha ha</a></li></ul>") {
     console.log("Pass: href tag is included properly");
   }
   else {

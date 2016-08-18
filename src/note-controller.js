@@ -8,7 +8,7 @@
 
   NoteController.prototype.insertHTML = function() {
     var element = document.getElementById("app");
-    element.innerHTML = this.noteListView.outputWeb();
+    element.innerHTML = this.noteListView.outputTwenty();
   };
 
   exports.NoteController = NoteController;
