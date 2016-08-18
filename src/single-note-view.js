@@ -4,7 +4,7 @@
     this.note = note;
   }
   SingleNoteView.prototype.writeHTML = function(){
-    var string ="<div>"+this.note.NoteCanStoreText()+"</div>";
+    var string ="<div>"+this.note.getText()+"</div>";
     return string;
   };
 
