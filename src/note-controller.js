@@ -6,7 +6,11 @@
     this.noteList = list.displayList();
     this.noteListView = new NoteListView(list.displayList());
     window.addEventListener('hashchange', this.showNoteForCurrentId);
-  };
+    window.addEventListener('submit', function(submitEvent) {
+      submitEvent.preventDefault();
+      console.log(submitEvent);
+    });
+  }
 
   NoteController.prototype.insertHTML = function() {
     var element = document.getElementById("app");
@@ -18,7 +22,7 @@
     var singleNote;
 
     noteController.noteList.forEach(function(item) {
-      if (item.id === Number(noteId)) {singleNote = item}
+      if (item.id === Number(noteId)) {singleNote = item;}
     });
 
     var singleNoteView = new SingleNoteView(singleNote);
